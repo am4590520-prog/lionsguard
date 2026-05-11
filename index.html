@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LionGuard Safaris</title>
+<link rel="stylesheet" href="css/style.css">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* Welcome Slideshow Styles */
+.welcome-slideshow {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.slides {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slides::before {
+  content: '';
+  position: absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  max-width: 700px;
+}
+
+.slide-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.slide-text p {
+  font-size: 18px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+/* ========================= */
+/* FOOTER FIX */
+/* ========================= */
+
+.footer {
+  background: #111;
+  color: #ddd;
+  padding: 40px 20px 10px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+.footer-col h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-col a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  color: orange;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: #ccc;
+  font-size: 22px;
+  margin-right: 12px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: orange;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+/* ========================= */
+/* WHATSAPP FLOAT BUTTON */
+/* ========================= */
+
+.whatsapp-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebe5d;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo.png" alt="LionGuard Safaris">
+      <span>LionGuard Safaris</span>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="safaris.html">Safaris</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="book.html" class="book-btn">Book Safari</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Explore Kenya's Wild Beauty</h1>
+    <p>Luxury safaris across Maasai Mara, Amboseli and Tsavo.</p>
+    <a href="book.php" class="btn">Book Your Safari</a>
+  </div>
+</section>
+
+<!-- WELCOME SLIDESHOW -->
+<section class="welcome-slideshow">
+
+  <div class="slides fade" style="background-image: url('images/welcome1.jpg');">
+    <div class="slide-text">
+      <h2>Welcome to LionGuard Safaris</h2>
+      <p>We offer unforgettable safari experiences across Kenya’s top destinations.</p>
+    </div>
+  </div>
+
+  <div class="slides fade" style="background-image: url('images/welcome2.jpg');">
+    <div class="slide-text">
+      <h2>Experience Wildlife Up Close</h2>
+      <p>From Maasai Mara to Amboseli, explore the heart of Kenya's wildlife.</p>
+    </div>
+  </div>
+
+  <div class="slides fade" style="background-image: url('images/welcome3.jpg');">
+    <div class="slide-text">
+      <h2>Adventure & Luxury Combined</h2>
+      <p>Enjoy premium safaris with expert guides and comfortable lodges.</p>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- POPULAR SAFARIS -->
+<section class="services">
+
+  <h2 id="popular-safaris">Popular Safaris</h2>
+
+  <div class="cards">
+
+    <!-- Maasai Mara -->
+    <div class="card">
+      <a href="maasai-mara-safari.html">
+        <img src="images/mara.jpg" alt="Maasai Mara">
+        <h3>Maasai Mara Safari</h3>
+      </a>
+      <p>Witness the Big Five and the Great Migration.</p>
+    </div>
+
+    <!-- Amboseli -->
+    <div class="card">
+      <a href="amboseli-safari.html">
+        <img src="images/amboseli.jpg" alt="Amboseli">
+        <h3>Amboseli Safari</h3>
+      </a>
+      <p>Elephants with breathtaking Mount Kilimanjaro views.</p>
+    </div>
+
+    <!-- Tsavo -->
+    <div class="card">
+      <a href="tsavo-safari.html">
+        <img src="images/tsavo.jpg" alt="Tsavo">
+        <h3>Tsavo Adventure</h3>
+      </a>
+      <p>Explore Kenya’s largest wilderness park.</p>
+    </div>
+
+  </div>
+
+</section>
+<section class="services">
+  <h2>Top Destinations</h2>
+
+  <div class="cards">
+    <div class="card">
+      <a href="destination-nakuru.html">
+        <img src="images/nakuru.jpg" alt="Lake Nakuru">
+        <h3>Lake Nakuru</h3>
+      </a>
+      <p>Famous for flamingos and rhinos.</p>
+      <a href="destination-nakuru.html" class="btn-link">Explore Nakuru</a>
+    </div>
+
+    <div class="card">
+      <a href="destination-samburu.html">
+        <img src="images/samburu.jpg" alt="Samburu">
+        <h3>Samburu</h3>
+      </a>
+      <p>Unique wildlife species found only in northern Kenya.</p>
+      <a href="destination-samburu.html" class="btn-link">Explore Samburu</a>
+    </div>
+
+    <div class="card">
+      <a href="destination-diani.html">
+        <img src="images/diani.jpg" alt="Diani Beach">
+        <h3>Diani Beach</h3>
+      </a>
+      <p>Relax after safari on Kenya’s best white sand beaches.</p>
+      <a href="destination-diani.html" class="btn-link">Explore Diani</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY PREVIEW -->
+<section class="gallery">
+  <h2>Safari Moments</h2>
+
+  <div class="gallery-grid">
+    <img src="images/lion.jpg" alt="Lion">
+    <img src="images/elephant.jpg" alt="Elephant">
+    <img src="images/giraffe.jpg" alt="Giraffe">
+    <img src="images/zebra.jpg" alt="Zebra">
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2>What Our Clients Say</h2>
+
+  <div class="cards">
+    <div class="card testimonial-card">
+      <img src="images/client1.jpg" alt="Client">
+      <p>"Amazing safari experience! Everything was perfectly organized."</p>
+      <h4>- James, UK</h4>
+    </div>
+
+    <div class="card testimonial-card">
+      <img src="images/client2.jpg" alt="Client">
+      <p>"Best trip ever! Saw the Big Five and loved every moment."</p>
+      <h4>- Maria, Germany</h4>
+    </div>
+
+    <div class="card testimonial-card">
+      <img src="images/client3.jpg" alt="Client">
+      <p>"Professional guides and unforgettable memories."</p>
+      <h4>- David, USA</h4>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col about-col">
+      <img src="images/logo.png" alt="LionGuard Safaris" class="footer-logo">
+      <p>Experience Kenya’s wildlife with trusted safari experts. We create unforgettable adventures.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="safaris.html">Safaris</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:info@lionguardsafaris.com">info@lionguardsafaris.com</a></p>
+      <p>Phone: <a href="tel:+254700000000">+254 741 376 710</a></p>
+      <p>Location: Nairobi, Kenya</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 LionGuard Safaris | All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/254741376710?text=Hello%20I%20am%20interested%20in%20a%20safari" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slides");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 5000);
+}
+</script>
+
+</body>
+</html>

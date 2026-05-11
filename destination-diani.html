@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diani Beach | LionGuard Safaris</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: #f5f5f5;
+    }
+
+    /* HEADER */
+
+    .header {
+      background: #111;
+      padding: 15px 0;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .logo img {
+      width: 55px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    .nav a:hover,
+    .nav .active {
+      color: orange;
+    }
+
+    .book-btn {
+      background: orange;
+      padding: 10px 18px;
+      border-radius: 5px;
+      color: white !important;
+    }
+
+    /* HERO */
+
+    .hero {
+      height: 70vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('images/diani.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 22px;
+    }
+
+    /* CONTENT */
+
+    .content {
+      width: 90%;
+      max-width: 1100px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .content h2 {
+      color: #111;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    /* ACTIVITIES */
+
+    .activities {
+      margin-top: 40px;
+    }
+
+    .activity {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #fafafa;
+      border-left: 5px solid orange;
+      border-radius: 5px;
+    }
+
+    .activity h3 {
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+      margin-top: 50px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* BUTTON */
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: orange;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: darkorange;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width: 768px) {
+
+      .container {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .hero-content h1 {
+        font-size: 38px;
+      }
+
+      .hero-content p {
+        font-size: 18px;
+      }
+
+      .content {
+        padding: 25px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="container">
+
+      <div class="logo">
+        <img src="images/logo.png" alt="LionGuard Safaris">
+        <span>LionGuard Safaris</span>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" class="active">Destinations</a>
+        <a href="contact.html">Contact</a>
+        <a href="book.php" class="book-btn">Book Safari</a>
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+      <h1>Diani Beach</h1>
+      <p>Relax on Kenya’s beautiful white sand beaches.</p>
+    </div>
+
+  </section>
+
+  <!-- CONTENT -->
+  <section class="content">
+
+    <h2>Explore Diani Beach</h2>
+
+    <p>
+      Diani Beach is one of Africa’s most famous coastal destinations,
+      known for its crystal-clear waters, white sandy beaches and tropical
+      palm trees. Located along Kenya’s south coast, Diani offers the perfect
+      combination of relaxation, adventure and luxury.
+    </p>
+
+    <p>
+      Visitors can enjoy beach holidays, water sports, marine excursions and
+      breathtaking sunsets along the Indian Ocean. Diani is the perfect place
+      to relax after a wildlife safari adventure.
+    </p>
+
+    <!-- ACTIVITIES -->
+    <div class="activities">
+
+      <h2>Beach Activities</h2>
+
+      <div class="activity">
+        <h3>Swimming & Relaxation</h3>
+
+        <p>
+          Enjoy peaceful moments along the white sandy beaches while swimming
+          in the warm turquoise waters of the Indian Ocean.
+        </p>
+      </div>
+
+      <div class="activity">
+        <h3>Water Sports</h3>
+
+        <p>
+          Experience exciting activities such as snorkeling, scuba diving,
+          kite surfing, jet skiing and deep-sea fishing.
+        </p>
+      </div>
+
+      <div class="activity">
+        <h3>Marine Excursions</h3>
+
+        <p>
+          Explore nearby coral reefs, dolphin tours and Wasini Island trips
+          while discovering the beauty of Kenya’s coastal marine life.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery">
+
+      <h2>Diani Beach Gallery</h2>
+
+      <div class="gallery-grid">
+        <img src="images/diani1.jpg" alt="Diani Beach">
+        <img src="images/diani2.jpg" alt="Indian Ocean">
+        <img src="images/diani3.jpg" alt="Beach Resort">
+      </div>
+
+    </div>
+
+    <a href="book.php" class="btn">Book This Destination</a>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 LionGuard Safaris | All Rights Reserved</p>
+  </footer>
+
+</body>
+
+</html>

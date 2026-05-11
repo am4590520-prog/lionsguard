@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tsavo | LionGuard Safaris</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.destination-hero {
+  height: 70vh;
+  background: url('images/tsavo.jpg') center/cover no-repeat;
+  position: relative;
+}
+.destination-hero::before {
+  content:"";
+  position:absolute;
+  width:100%; height:100%;
+  background:rgba(0,0,0,0.6);
+}
+.destination-hero .hero-content {
+  position:relative;
+  color:white;
+  text-align:center;
+  top:50%;
+  transform:translateY(-50%);
+}
+.destination-content {
+  padding:60px 20px;
+  max-width:1000px;
+  margin:auto;
+  line-height:1.8;
+}
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+}
+.gallery img {
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:10px;
+}
+.btn {
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:orange;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+<div class="container">
+<div class="logo">
+<img src="images/logo.png">
+<span>LionGuard Safaris</span>
+</div>
+
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="destinations.html">Destinations</a>
+<a href="safaris.html">Safaris</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+<a href="book.html" class="book-btn">Book Safari</a>
+</nav>
+</div>
+</header>
+
+<section class="destination-hero">
+<div class="hero-content">
+<h1>Tsavo National Park</h1>
+<p>Kenya’s Wildest and Largest Safari Destination</p>
+</div>
+</section>
+
+<section class="destination-content">
+
+<h2>About Tsavo</h2>
+<p>
+Tsavo National Park is Kenya’s largest wildlife conservation area, divided into Tsavo East and Tsavo West. It is famous for its vast landscapes and iconic red elephants.
+</p>
+
+<p>
+The park features diverse scenery including lava flows, hills, rivers, and natural springs such as Mzima Springs, making it one of the most unique safari destinations in Kenya.
+</p>
+
+<h2>Highlights</h2>
+<ul>
+<li>Famous red elephants</li>
+<li>Vast untouched wilderness</li>
+<li>Mzima Springs crystal-clear waters</li>
+<li>Diverse landscapes and wildlife</li>
+</ul>
+
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="images/tsavo1.jpg">
+<img src="images/tsavo2.jpg">
+<img src="images/tsavo3.jpg">
+<img src="images/tsavo4.jpg">
+</div>
+
+<a href="book.html" class="btn">Book This Safari</a>
+
+</section>
+
+<footer>
+<p>© 2026 LionGuard Safaris | Kenya</p>
+</footer>
+
+</body>
+</html>
