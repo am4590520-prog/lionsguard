@@ -1,0 +1,430 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:#0b1d12;
+color:white;
+}
+
+/* CONTAINER */
+.container{
+width:90%;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+/* HEADER */
+.header{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(6px);
+padding:15px 0;
+z-index:1000;
+}
+
+/* LOGO */
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+height:45px;
+width:auto;
+}
+
+.logo span{
+font-size:20px;
+font-weight:600;
+color:#f4b400;
+}
+
+/* NAV */
+.nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav a:hover{
+color:#f4b400;
+}
+
+/* BOOK BUTTON */
+.book-btn{
+background:#f4b400;
+padding:8px 15px;
+border-radius:5px;
+color:black !important;
+font-weight:bold;
+}
+
+.book-btn:hover{
+background:#ffd34d;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+url('../images/hero.jpg');
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding-top:80px;
+}
+
+/* FIX HERO TEXT WIDTH */
+.hero-content{
+max-width:700px;
+}
+
+.hero-content h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:30px;
+color:#ddd;
+}
+
+/* BUTTON */
+.btn{
+background:#f4b400;
+color:black;
+padding:14px 30px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#ffd34d;
+}
+
+/* WELCOME */
+.welcome{
+padding:80px 10%;
+text-align:center;
+background:#0e2416;
+}
+
+/* SERVICES */
+.services{
+padding:80px 10%;
+text-align:center;
+background:#122a1a;
+}
+
+.services h2{
+margin-bottom:40px;
+}
+
+/* CARDS */
+.cards{
+display:flex;
+gap:25px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+/* 🔥 FIXED CARD DESIGN */
+.card{
+background:#1b3a25;
+width:280px;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+
+/* 🔥 PERFECT IMAGE FIX */
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;   /* KEY FIX */
+display:block;
+}
+
+/* TEXT AREA */
+.card h3{
+margin:15px;
+color:#f4b400;
+}
+
+.card p{
+margin:0 15px 20px;
+color:#ddd;
+}
+
+/* HOVER */
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* WHY US */
+.why-us{
+padding:80px 10%;
+text-align:center;
+background:#10281a;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:25px;
+background:black;
+}
+/* GALLERY SECTION */
+.gallery{
+padding:100px 10%;
+text-align:center;
+background:#0e2416;
+}
+
+/* TITLE */
+.gallery h2{
+font-size:34px;
+margin-bottom:50px;
+}
+
+/* GRID LAYOUT */
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+gap:25px;
+}
+
+/* EACH IMAGE CONTAINER */
+.gallery-grid img{
+width:100%;
+height:220px;
+object-fit:cover;   /* 🔥 THIS FIXES STRETCHING */
+border-radius:12px;
+transition:0.4s;
+box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* HOVER EFFECT */
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+/* Booking and Contact Cards */
+.booking-card,
+.contact-card {
+background: #122a1a;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+max-width: 1000px;
+margin: auto;
+display: flex;
+flex-direction: column;
+gap: 25px;
+}
+
+/* Form rows for two-column layout */
+.form-row {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+/* Form group styling */
+.form-group {
+flex: 1;
+min-width: 220px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+padding: 12px 15px;
+border-radius: 8px;
+border: none;
+outline: none;
+font-size: 16px;
+}
+
+.form-group textarea {
+min-height: 120px;
+resize: none;
+}
+
+/* Submit Buttons */
+.submit-btn,
+.contact-form button {
+background: #f4b400;
+color: black;
+padding: 14px 30px;
+border: none;
+border-radius: 8px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+margin-top: 10px;
+}
+
+.submit-btn:hover,
+.contact-form button:hover {
+background: #ffd34d;
+}
+
+/* Contact info styling */
+.contact-info {
+margin-top: 20px;
+color: #ddd;
+}
+
+.contact-info h3 {
+color: #f4b400;
+margin-bottom: 15px;
+}
+/* CONTACT CARD SECTION */
+.contact-card {
+background: #122a1a;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+max-width: 1000px;
+margin: auto;
+display: flex;
+flex-direction: column;
+gap: 25px;
+}
+
+/* FORM ROWS FOR TWO-COLUMN LAYOUT */
+.contact-form .form-row {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+/* FORM GROUPS */
+.contact-form .form-group {
+flex: 1;
+min-width: 220px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group select,
+.contact-form .form-group textarea {
+padding: 12px 15px;
+border-radius: 8px;
+border: none;
+outline: none;
+font-size: 16px;
+}
+
+.contact-form .form-group textarea {
+min-height: 120px;
+resize: none;
+}
+
+/* SUBMIT BUTTON */
+.contact-form button {
+background: #f4b400;
+color: black;
+padding: 14px 30px;
+border: none;
+border-radius: 8px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+margin-top: 10px;
+}
+
+.contact-form button:hover {
+background: #ffd34d;
+}
+
+/* CONTACT INFO */
+.contact-info {
+margin-top: 20px;
+color: #ddd;
+}
+
+.contact-info h3 {
+color: #f4b400;
+margin-bottom: 15px;
+}
+/* WELCOME SLIDESHOW */
+.welcome-slideshow {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.slides {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.5); /* Darken for text readability */
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f4b400;
+  text-align: center;
+  max-width: 700px;
+}
+
+.slide-text h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.slide-text p {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
